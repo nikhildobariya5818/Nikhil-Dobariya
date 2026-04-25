@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+import { useParams } from 'next/navigation';
 import { motion } from 'motion/react';
 import { 
   ChevronRight, 
@@ -16,7 +18,6 @@ import {
   ArrowRight,
   Star
 } from 'lucide-react';
-import { Link, useParams } from 'react-router-dom';
 
 const productData = {
   'premium-white-onion-flakes': {
@@ -76,7 +77,8 @@ const relatedProducts = [
 ];
 
 export default function ProductDetail() {
-  const { id } = useParams();
+  const params = useParams();
+  const id = params.id as string;
   const product = productData[id as keyof typeof productData] || productData['premium-white-onion-flakes'];
 
   return (
