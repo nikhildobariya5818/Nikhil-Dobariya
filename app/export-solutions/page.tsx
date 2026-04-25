@@ -1,10 +1,3 @@
-'use client';
-
-import Navbar from '@/app/components/Navbar';
-import Footer from '@/app/components/Footer';
-import ScrollToTop from '@/app/components/ScrollToTop';
-import WhatsAppButton from '@/app/components/WhatsAppButton';
-
 import { motion } from 'motion/react';
 import { 
   Globe, 
@@ -46,21 +39,10 @@ const onboardingSteps = [
     number: '04',
     title: 'Lifecycle Supply',
     desc: 'Scheduled bulk shipments with automated logistics reporting and re-order triggers.'
-
-      </main>
-      <Footer />
-      <WhatsAppButton />
-    </>
-  );
-}
+  }
 ];
 
 export default function ExportSolutions() {
-  return (
-    <>
-      <ScrollToTop />
-      <Navbar />
-      <main className="flex-grow pt-20">
   return (
     <div className="pt-20 bg-background min-h-screen font-body-md overflow-x-hidden">
       <main>
@@ -82,7 +64,7 @@ export default function ExportSolutions() {
                 Bridging the gap between Indian farms and global manufacturers with surgical precision in logistics, documentation, and quality assurance.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link href="/contact">
+                <Link to="/contact">
                   <motion.button 
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -323,10 +305,10 @@ export default function ExportSolutions() {
                 Join a network of global manufacturers who trust De&#39;Hydra for consistency, quality, and ethical sourcing.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <Link href="/request-quote">
+                <Link to="/request-quote">
                   <button className="w-full sm:w-auto bg-white text-primary px-12 py-5 rounded-2xl font-black uppercase text-sm tracking-[0.2em] shadow-2xl hover:scale-105 transition-all">Request Export Quote</button>
                 </Link>
-                <Link href="/contact">
+                <Link to="/contact">
                   <button className="w-full sm:w-auto bg-white/10 backdrop-blur-xl text-white border-2 border-white/20 px-12 py-5 rounded-2xl font-black uppercase text-sm tracking-[0.2em] hover:bg-white/20 transition-all">Contact Export Desk</button>
                 </Link>
               </div>

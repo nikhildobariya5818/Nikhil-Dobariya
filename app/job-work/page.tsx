@@ -1,10 +1,3 @@
-'use client';
-
-import Navbar from '@/app/components/Navbar';
-import Footer from '@/app/components/Footer';
-import ScrollToTop from '@/app/components/ScrollToTop';
-import WhatsAppButton from '@/app/components/WhatsAppButton';
-
 import { motion } from 'motion/react';
 import { 
   Settings, 
@@ -61,13 +54,7 @@ const capabilities = [
     desc: 'Just-in-time delivery and strategic warehousing at our Mahuva and Rajkot facilities.',
     icon: Activity,
     color: 'bg-white'
-
-      </main>
-      <Footer />
-      <WhatsAppButton />
-    </>
-  );
-}
+  }
 ];
 
 const workflowSteps = [
@@ -98,11 +85,6 @@ const stats = [
 
 export default function JobWork() {
   return (
-    <>
-      <ScrollToTop />
-      <Navbar />
-      <main className="flex-grow pt-20">
-  return (
     <div className="pt-20 bg-background min-h-screen font-body-md">
       <main>
         {/* Hero Section */}
@@ -123,7 +105,7 @@ export default function JobWork() {
                 De'Hydra provides end-to-end contract manufacturing solutions for global food brands. From raw material sourcing to high-precision processing and private label packaging.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <Link href="/request-quote">
+                <Link to="/request-quote">
                   <motion.button 
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
