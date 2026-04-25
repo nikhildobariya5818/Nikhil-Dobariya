@@ -1,10 +1,3 @@
-'use client';
-
-import Navbar from '@/app/components/Navbar';
-import Footer from '@/app/components/Footer';
-import ScrollToTop from '@/app/components/ScrollToTop';
-import WhatsAppButton from '@/app/components/WhatsAppButton';
-
 import { motion } from 'motion/react';
 import { 
   ShieldCheck, 
@@ -46,21 +39,10 @@ const certifications = [
     desc: 'Authorized Central License for high-volume export and manufacturing of dehydrated vegetables.',
     valid: 'EXPORT READY',
     color: 'border-tertiary'
-
-      </main>
-      <Footer />
-      <WhatsAppButton />
-    </>
-  );
-}
+  }
 ];
 
 export default function QualityCertifications() {
-  return (
-    <>
-      <ScrollToTop />
-      <Navbar />
-      <main className="flex-grow pt-20">
   return (
     <div className="pt-20 bg-background min-h-screen font-body-md">
       <main>

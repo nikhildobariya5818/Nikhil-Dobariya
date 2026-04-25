@@ -1,10 +1,3 @@
-'use client';
-
-import Navbar from '@/app/components/Navbar';
-import Footer from '@/app/components/Footer';
-import ScrollToTop from '@/app/components/ScrollToTop';
-import WhatsAppButton from '@/app/components/WhatsAppButton';
-
 import { motion } from 'motion/react';
 import { 
   Search, 
@@ -64,13 +57,7 @@ const categories = [
     desc: 'Selected premium seeds and cereals, thoroughly cleaned and sorted for global distribution.',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD6A7ouAPU4EYjw_LFpWE34CaDNpsECqoqC6fxkJ3vjht3iSzxVi48iWzd6MitCwZPO03QR_GMkt8UOc6AiuJCAFACBR7IYTGfKd6d3Gn-fFu7tai_tdxER5oVdZBw2YokzDaJSOruxr8vRAJ0gJV2d8gv0XaEAtKhJwikQVDsijpyeMaMdDbNuYI285BjwZ6bxu6TTUQS5ymdPX283ZxCV2yjsFsc2OhCjMWpwG312k2dd2nfeUDtQwjLVQ0YELyhfdiX0K4nK4bM',
     count: 15
-
-      </main>
-      <Footer />
-      <WhatsAppButton />
-    </>
-  );
-}
+  }
 ];
 
 const filters = [
@@ -85,11 +72,6 @@ const filters = [
 const forms = ['Minced', 'Powder', 'Chopped', 'Granules', 'Whole'];
 
 export default function ProductsList() {
-  return (
-    <>
-      <ScrollToTop />
-      <Navbar />
-      <main className="flex-grow pt-20">
   return (
     <div className="pt-20 bg-background min-h-screen">
       <header className="py-16 max-w-7xl mx-auto px-6 md:px-8 border-b border-slate-100">
@@ -169,7 +151,7 @@ export default function ProductsList() {
             {categories.map((cat, idx) => (
               <Link 
                 key={cat.id} 
-                href={`/category/${cat.id}`}
+                to={`/category/${cat.id}`}
                 className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-slate-100"
               >
                 <div className="h-60 relative overflow-hidden">

@@ -1,10 +1,3 @@
-'use client';
-
-import Navbar from '@/app/components/Navbar';
-import Footer from '@/app/components/Footer';
-import ScrollToTop from '@/app/components/ScrollToTop';
-import WhatsAppButton from '@/app/components/WhatsAppButton';
-
 import { motion } from 'motion/react';
 import { 
   Building2, 
@@ -58,13 +51,7 @@ const facilities = [
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBaUQYxvz2t_kTAEi_Ixu0OW-seLcLhJajgRNgD5DNt9biX7BS3Nln_knmJl7f9FeieqAqUZJh1-eXmhEgSLTWu5ICm0UBDw_nyvyf7qR7x3rBjlgRiOqZiHTH-QP4I2WXrtGoXCIE_0CgTnrhmaIIF4nYi5B1hWIDsFAGyUACJS_ErlkY5xhKXQ7fa1V_ndgNQpnnpZH8pn_QMgk6_vvFCVgWZVJkw66mpQGmylMNUoeWBMRMme2kUnNdXxggF8CPaVK8J6XjM8-k',
     capacity: '8,000 MT',
     specialty: 'Finished Packaging'
-
-      </main>
-      <Footer />
-      <WhatsAppButton />
-    </>
-  );
-}
+  }
 ];
 
 const transitFacilities = [
@@ -94,11 +81,6 @@ const timeline = [
 ];
 
 export default function Infrastructure() {
-  return (
-    <>
-      <ScrollToTop />
-      <Navbar />
-      <main className="flex-grow pt-20">
   return (
     <div className="pt-20 bg-background min-h-screen font-body-md overflow-x-hidden">
       <main>
@@ -369,7 +351,7 @@ export default function Infrastructure() {
                 Join 200+ global food manufacturers who rely on De&#39;Hydra&#39;s industrial-grade infrastructure.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Link href="/request-quote">
+                <Link to="/request-quote">
                   <button className="w-full sm:w-auto bg-primary text-white px-12 py-5 rounded-2xl font-black uppercase text-sm tracking-[0.2em] hover:scale-105 transition-all shadow-xl shadow-primary/20">Request Site Visit</button>
                 </Link>
                 <button className="w-full sm:w-auto bg-white text-primary border-2 border-primary px-12 py-5 rounded-2xl font-black uppercase text-sm tracking-[0.2em] hover:bg-slate-50 transition-colors">Download Specs</button>
