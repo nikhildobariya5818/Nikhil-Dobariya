@@ -17,7 +17,13 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-
+  webpack: (config, { isServer }) => {
+    config.watchOptions = {
+      ...config.watchOptions,
+      ignored: ['**/src/**', '**/node_modules/**'],
+    };
+    return config;
+  },
 };
 
 export default withNextIntl(nextConfig);
