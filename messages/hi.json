@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "होम",
+    "products": "उत्पाद",
+    "about": "परिचय",
+    "admin": "एडमिन पैनल",
+    "contact": "संपर्क"
+  },
+  "home": {
+    "title": "डिहाइड्रा में स्वागत है",
+    "subtitle": "प्रीमियम निर्जलीकृत उत्पाद",
+    "cta": "अभी खरीदें",
+    "featured": "विशेष उत्पाद"
+  },
+  "products": {
+    "title": "हमारे उत्पाद",
+    "filter": "फिल्टर करें",
+    "search": "उत्पाद खोजें...",
+    "noResults": "कोई उत्पाद नहीं मिला",
+    "category": "श्रेणी",
+    "priceRange": "मूल्य सीमा",
+    "sortBy": "इसके अनुसार क्रमबद्ध करें",
+    "viewDetails": "विवरण देखें",
+    "addToCart": "कार्ट में जोड़ें",
+    "price": "कीमत",
+    "stock": "स्टॉक",
+    "description": "विवरण"
+  },
+  "productDetail": {
+    "specifications": "विनिर्देश",
+    "reviews": "समीक्षा",
+    "relatedProducts": "संबंधित उत्पाद",
+    "quantity": "मात्रा",
+    "addToCart": "कार्ट में जोड़ें",
+    "outOfStock": "स्टॉक से बाहर"
+  },
+  "admin": {
+    "title": "एडमिन पैनल",
+    "products": "उत्पाद",
+    "categories": "श्रेणियाँ",
+    "orders": "ऑर्डर",
+    "pricing": "मूल्य निर्धारण",
+    "addProduct": "उत्पाद जोड़ें",
+    "editProduct": "उत्पाद संपादित करें",
+    "deleteProduct": "उत्पाद हटाएं",
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "edit": "संपादित करें",
+    "delete": "हटाएं"
+  },
+  "common": {
+    "loading": "लोड हो रहा है...",
+    "error": "एक त्रुटि हुई",
+    "success": "सफल",
+    "language": "भाषा"
+  }
+}

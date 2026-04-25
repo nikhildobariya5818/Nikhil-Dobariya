@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "products": "Productos",
+    "about": "Acerca de",
+    "admin": "Panel de Administración",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Bienvenido a Dehydra",
+    "subtitle": "Productos Deshidratados Premium",
+    "cta": "Comprar Ahora",
+    "featured": "Productos Destacados"
+  },
+  "products": {
+    "title": "Nuestros Productos",
+    "filter": "Filtrar",
+    "search": "Buscar productos...",
+    "noResults": "No se encontraron productos",
+    "category": "Categoría",
+    "priceRange": "Rango de Precio",
+    "sortBy": "Ordenar Por",
+    "viewDetails": "Ver Detalles",
+    "addToCart": "Agregar al Carrito",
+    "price": "Precio",
+    "stock": "Stock",
+    "description": "Descripción"
+  },
+  "productDetail": {
+    "specifications": "Especificaciones",
+    "reviews": "Reseñas",
+    "relatedProducts": "Productos Relacionados",
+    "quantity": "Cantidad",
+    "addToCart": "Agregar al Carrito",
+    "outOfStock": "Agotado"
+  },
+  "admin": {
+    "title": "Panel de Administración",
+    "products": "Productos",
+    "categories": "Categorías",
+    "orders": "Pedidos",
+    "pricing": "Precios",
+    "addProduct": "Agregar Producto",
+    "editProduct": "Editar Producto",
+    "deleteProduct": "Eliminar Producto",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "edit": "Editar",
+    "delete": "Eliminar"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "success": "Éxito",
+    "language": "Idioma"
+  }
+}

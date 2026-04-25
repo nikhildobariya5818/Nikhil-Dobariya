@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "admin": "Admin Panel",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome to Dehydra",
+    "subtitle": "Premium Dehydrated Products",
+    "cta": "Shop Now",
+    "featured": "Featured Products"
+  },
+  "products": {
+    "title": "Our Products",
+    "filter": "Filter",
+    "search": "Search products...",
+    "noResults": "No products found",
+    "category": "Category",
+    "priceRange": "Price Range",
+    "sortBy": "Sort By",
+    "viewDetails": "View Details",
+    "addToCart": "Add to Cart",
+    "price": "Price",
+    "stock": "Stock",
+    "description": "Description"
+  },
+  "productDetail": {
+    "specifications": "Specifications",
+    "reviews": "Reviews",
+    "relatedProducts": "Related Products",
+    "quantity": "Quantity",
+    "addToCart": "Add to Cart",
+    "outOfStock": "Out of Stock"
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "products": "Products",
+    "categories": "Categories",
+    "orders": "Orders",
+    "pricing": "Pricing",
+    "addProduct": "Add Product",
+    "editProduct": "Edit Product",
+    "deleteProduct": "Delete Product",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "language": "Language"
+  }
+}

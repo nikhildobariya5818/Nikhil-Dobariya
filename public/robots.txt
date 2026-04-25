@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Crawl delay for specific bots (in seconds)
+Crawl-delay: 1
+
+# User-agent specific rules
+User-agent: Googlebot
+Crawl-delay: 0
