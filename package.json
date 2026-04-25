@@ -9,25 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
+    "axios": "^1.6.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.4.0",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
     "next": "^15.0.0",
     "next-intl": "^3.9.0",
     "next-seo": "^6.6.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "lucide-react": "^0.546.0",
-    "motion": "^12.23.24",
-    "framer-motion": "^11.4.0",
-    "axios": "^1.6.0",
-    "clsx": "^2.1.1",
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.13",
     "@types/node": "^20.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "typescript": "^5.6.2",
-    "tailwindcss": "^4.1.14",
     "autoprefixer": "^10.4.21",
-    "@tailwindcss/typography": "^0.5.13"
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.6.2"
   }
 }
