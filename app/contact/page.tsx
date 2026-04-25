@@ -1,10 +1,5 @@
 'use client';
 
-import Navbar from '@/app/components/Navbar';
-import Footer from '@/app/components/Footer';
-import ScrollToTop from '@/app/components/ScrollToTop';
-import WhatsAppButton from '@/app/components/WhatsAppButton';
-
 import { motion } from 'motion/react';
 import { 
   Phone, 
@@ -37,21 +32,10 @@ const faq = [
   {
     q: 'Can we request samples before placing a bulk order?',
     a: 'Certainly. We provide complimentary grade-samples for evaluation. Shipping charges may apply for international courier dispatch.'
-
-      </main>
-      <Footer />
-      <WhatsAppButton />
-    </>
-  );
-}
+  }
 ];
 
 export default function Contact() {
-  return (
-    <>
-      <ScrollToTop />
-      <Navbar />
-      <main className="flex-grow pt-20">
   return (
     <div className="pt-20 bg-background min-h-screen font-body-md overflow-x-hidden">
       <main>
@@ -67,7 +51,7 @@ export default function Contact() {
                 Connect Globally
               </span>
               <h1 className="text-4xl md:text-6xl font-bold text-on-surface mb-6 uppercase tracking-tighter font-display-lg leading-tight">
-                Let's build a <span className="text-primary italic">fresher</span> <br />supply chain.
+                Let&apos;s build a <span className="text-primary italic">fresher</span> <br />supply chain.
               </h1>
               <p className="text-lg md:text-xl text-on-surface-variant max-w-xl mb-12 font-medium leading-relaxed font-body-lg">
                 Whether you are looking for premium onion flakes for export or need industrial dehydration job work, our team is ready to scale your logistics.
@@ -189,7 +173,7 @@ export default function Contact() {
                         <MapPin className="w-5 h-5" />
                       </div>
                       <p className="text-base text-on-surface-variant font-medium leading-relaxed font-body-md">
-                        102 De'Hydra Plaza, Industrial Hub,<br />Rajkot, Gujarat, India - 360001
+                        102 De&apos;Hydra Plaza, Industrial Hub,<br />Rajkot, Gujarat, India - 360001
                       </p>
                     </div>
                     <div className="flex gap-6 group">
@@ -236,62 +220,6 @@ export default function Contact() {
                   <p className="text-sm text-on-surface-variant font-medium leading-relaxed font-body-md">ISO 22000:2018 & HACCP Certified Facilities for Global Export standards.</p>
                 </motion.div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Facilities Bento Grid */}
-        <section className="py-32 px-6 md:px-8 bg-surface-container-low">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-20">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight uppercase font-display-lg">Our Facilities</h2>
-              <p className="text-lg text-on-surface-variant max-w-2xl mx-auto font-medium font-body-lg">
-                Strategic locations in the heart of Gujarat's onion and garlic belt ensuring minimal transit time and maximum freshness.
-              </p>
-            </div>
-            <div className="grid lg:grid-cols-2 gap-10">
-              {[
-                {
-                  title: 'Mahuva Warehouse',
-                  type: 'Supply Hub',
-                  img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBDnsCi7gB5ZR7a9XMVbKNf0CBTWVciPNCcQsrz5ttWP-bngQa7NKY_Bv8Oy2bY-Cn4xAbDT5g43fNyp676N6n5vPPfCaSPPZUjVxMFC-d0HcR_0Ak9-kYgq5eqLqTDBWaOcOK7rHthqoCe1v3KjOM-RUGERBFMZT2G5zarLU01blw2yzvk-713R7xEiK9TQb7-6nQF9lZkflkx6ugTWxMW2t0uX7MEZ2eTKp2TQ5neRbUofAY3bfMn7wfYqrJsnsOGqLm2qir27IU',
-                  stats: ['5,000 MT Capacity', 'Port Connectivity']
-                },
-                {
-                  title: 'Rajkot Tech Plant',
-                  type: 'Core Processing',
-                  img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCGVG0w2n7JfgB5SK_AwmLBTZj6JnEtUHTVkdhbzLoZRda5opTAqb9ai5P5M75AOmCRN8bNQSfuLp9dtGei_LWTXWLoP8JC3QmIGer1j63HJ5Cs3pQJYM5Wbt6rYQOSwi5AtE97mHF2s2y9uEiqA0S3c8-YPXulxND0qZ-Y5s_ScR29ZvzTCHLMHR0t84rsMc9zumhq8Kt8CAcuRftYSyTwLWnAICremhMxTESPKLQvz-iEh2RJMomwb54hgxXVMKPOEvrg3o7kdME',
-                  stats: ['Automated Sorting', 'Grade A Processing']
-                }
-              ].map((fac, idx) => (
-                <motion.div 
-                  key={fac.title}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1 }}
-                  className="bg-white rounded-[3rem] border border-slate-100 shadow-xl overflow-hidden group"
-                >
-                  <div className="h-64 relative overflow-hidden">
-                    <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src={fac.img} alt={fac.title} />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                    <div className="absolute bottom-8 left-8 text-white">
-                      <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-60 mb-2">{fac.type}</p>
-                      <h3 className="text-3xl font-bold uppercase tracking-tight leading-none">{fac.title}</h3>
-                    </div>
-                  </div>
-                  <div className="p-10 flex flex-col sm:flex-row justify-between items-center gap-8">
-                    <p className="text-sm font-medium text-on-surface-variant leading-relaxed max-w-xs">Specialized climate-controlled processing and storage optimized for global export standards.</p>
-                    <div className="space-y-3 shrink-0">
-                      {fac.stats.map(s => (
-                        <div key={s} className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-primary">
-                          <CheckCircle2 className="w-4 h-4 text-secondary" /> {s}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
             </div>
           </div>
         </section>
