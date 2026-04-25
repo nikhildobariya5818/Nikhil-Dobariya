@@ -151,7 +151,7 @@ export default function ProductsList() {
             {categories.map((cat, idx) => (
               <Link 
                 key={cat.id} 
-                to={`/category/${cat.id}`}
+                href={`/category/${cat.id}`}
                 className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-slate-100"
               >
                 <div className="h-60 relative overflow-hidden">
