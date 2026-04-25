@@ -64,7 +64,7 @@ export default function ExportSolutions() {
                 Bridging the gap between Indian farms and global manufacturers with surgical precision in logistics, documentation, and quality assurance.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link to="/contact">
+                <Link href="/contact">
                   <motion.button 
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -305,10 +305,10 @@ export default function ExportSolutions() {
                 Join a network of global manufacturers who trust De&#39;Hydra for consistency, quality, and ethical sourcing.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <Link to="/request-quote">
+                <Link href="/request-quote">
                   <button className="w-full sm:w-auto bg-white text-primary px-12 py-5 rounded-2xl font-black uppercase text-sm tracking-[0.2em] shadow-2xl hover:scale-105 transition-all">Request Export Quote</button>
                 </Link>
-                <Link to="/contact">
+                <Link href="/contact">
                   <button className="w-full sm:w-auto bg-white/10 backdrop-blur-xl text-white border-2 border-white/20 px-12 py-5 rounded-2xl font-black uppercase text-sm tracking-[0.2em] hover:bg-white/20 transition-all">Contact Export Desk</button>
                 </Link>
               </div>

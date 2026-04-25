@@ -105,7 +105,7 @@ export default function JobWork() {
                 De'Hydra provides end-to-end contract manufacturing solutions for global food brands. From raw material sourcing to high-precision processing and private label packaging.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <Link to="/request-quote">
+                <Link href="/request-quote">
                   <motion.button 
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}

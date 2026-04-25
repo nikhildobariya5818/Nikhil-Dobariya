@@ -351,7 +351,7 @@ export default function Infrastructure() {
                 Join 200+ global food manufacturers who rely on De&#39;Hydra&#39;s industrial-grade infrastructure.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Link to="/request-quote">
+                <Link href="/request-quote">
                   <button className="w-full sm:w-auto bg-primary text-white px-12 py-5 rounded-2xl font-black uppercase text-sm tracking-[0.2em] hover:scale-105 transition-all shadow-xl shadow-primary/20">Request Site Visit</button>
                 </Link>
                 <button className="w-full sm:w-auto bg-white text-primary border-2 border-primary px-12 py-5 rounded-2xl font-black uppercase text-sm tracking-[0.2em] hover:bg-slate-50 transition-colors">Download Specs</button>
